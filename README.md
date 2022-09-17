@@ -1,12 +1,20 @@
 getgenv().Prediction =  (  0  )   -- [ PREDICTION: THIS IS ANARCHY IT DOESNT REQUIRE ANYTHING MORE THAN .01  ]
 
-getgenv().FOV =  (  30  )   -- [ FOV RADIUS: Increases Or Decreases FOV Radius ]
+getgenv().FOV =  (  25  )   -- [ FOV RADIUS: Increases Or Decreases FOV Radius ]
 
-getgenv().AimKey =  (  "["  )  -- [ TOGGLE KEY: Toggles Silent Aim On And Off ]
+getgenv().AimKey =  (  "c"  )  -- [ TOGGLE KEY: Toggles Silent Aim On And Off ]
 
 --[[
 		Do Not Edit Anything Beyond This Point. 
 ]]
+
+local placeholdval = false
+if game.PlaceId == 5872075530 then
+	placeholdval = true
+else
+	game:GetService("Players").LocalPlayer:Kick("LEARN TO READ SPED") task.wait(1)
+	while true do end
+end
 
 local SilentAim = true
 local NeckOffSet = Vector3.new(0,-.5,0)
@@ -39,8 +47,6 @@ FOV_CIRCLE.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize
 local Options = {
 	Torso = "HumanoidRootPart";
 	Head = "Head";
-    Torso = "LowerTorso";
-    Torso = "UpperTorso";
 }
 
 local function MoveFovCircle()
