@@ -1,6 +1,6 @@
 getgenv().Prediction =  (  0  )   -- [ PREDICTION: THIS IS ANARCHY IT DOESNT REQUIRE ANYTHING MORE THAN .01  ]
 
-getgenv().FOV =  (  25  )   -- [ FOV RADIUS: Increases Or Decreases FOV Radius ]
+getgenv().FOV =  (  35  )   -- [ FOV RADIUS: Increases Or Decreases FOV Radius ]
 
 getgenv().AimKey =  (  "c"  )  -- [ TOGGLE KEY: Toggles Silent Aim On And Off ]
 
