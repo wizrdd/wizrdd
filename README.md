@@ -1,20 +1,13 @@
-getgenv().Prediction =  (  0  )   -- [ PREDICTION: THIS IS ANARCHY IT DOESNT REQUIRE ANYTHING MORE THAN .01  ]
+getgenv().Prediction =  (  0  )
 
-getgenv().FOV =  (  35  )   -- [ FOV RADIUS: Increases Or Decreases FOV Radius ]
+getgenv().FOV =  (  35  )
 
-getgenv().AimKey =  (  "c"  )  -- [ TOGGLE KEY: Toggles Silent Aim On And Off ]
+getgenv().AimKey =  (  "c"  )
 
 --[[
 		Do Not Edit Anything Beyond This Point. 
 ]]
 
-local placeholdval = false
-if game.PlaceId == 5872075530 then
-	placeholdval = true
-else
-	game:GetService("Players").LocalPlayer:Kick("LEARN TO READ SPED") task.wait(1)
-	while true do end
-end
 
 local SilentAim = true
 local NeckOffSet = Vector3.new(0,-.5,0)
@@ -135,5 +128,3 @@ oldIndex = hookmetamethod(game, "__index", function(self, Index, Screw)
     end
 	return oldIndex(self, Index, Screw)
 end)
-
---Farewell Atman, Nosss, Toru.
